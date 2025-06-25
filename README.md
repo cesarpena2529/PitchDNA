@@ -51,6 +51,13 @@ As someone diving into both **AI/ML** and **cloud architecture**, I wanted to:
   - A UMAP chart with the user's pitch visualized
   - Statcast video links (via fuzzy-matched play ID logic)
 
+## Compare by Features
+
+![Compare Features](screenshots/compare_features.png)
+
+## Compare by Player
+
+![Compare Players](screenshots/compare_players.png)
 ---
 
 ## 📦 Deployment Architecture
