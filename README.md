@@ -6,19 +6,19 @@ A full-stack baseball pitch comparison engine that uses machine learning and vis
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🔍 **Compare by Player Name** – Enter an MLB pitcher, pitch type, and year to find similar pitches
-- 🧠 **Compare by Pitch Characteristics** – Enter metrics like speed, spin, and movement to find your closest MLB comps
-- 📊 **UMAP Visualization** – Visual map of pitch similarity across all MLB players
-- 🧬 **K-Nearest Neighbors (KNN)** – Backend model to identify pitch similarity based on numerical features
-- 🎥 **Statcast Video Integration** – Click to watch matched pitches in real MLB game footage
-- 🤖 **Fuzzy Name Matching** – Handles name typos or loose inputs like “DeGrom” or “Shohei”
-- 💻 **Deployed Full Stack** – Frontend (React on S3), Backend (FastAPI on EC2), API connected via Axios
+-  **Compare by Player Name** – Enter an MLB pitcher, pitch type, and year to find similar pitches
+-  **Compare by Pitch Characteristics** – Enter metrics like speed, spin, and movement to find your closest MLB comps
+-  **UMAP Visualization** – Visual map of pitch similarity across all MLB players
+-  **K-Nearest Neighbors (KNN)** – Backend model to identify pitch similarity based on numerical features
+-  **Statcast Video Integration** – Click to watch matched pitches in real MLB game footage
+-  **Fuzzy Name Matching** – Handles name typos or loose inputs like “DeGrom” or “Shohei”
+-  **Deployed Full Stack** – Frontend (React on S3), Backend (FastAPI on EC2), API connected via Axios
 
 ---
 
-## 💡 Why I Built It
+##  Why I Built It
 
 As someone diving into both **AI/ML** and **cloud architecture**, I wanted to:
 - Build a real-world application using **machine learning + sports data**
@@ -28,7 +28,7 @@ As someone diving into both **AI/ML** and **cloud architecture**, I wanted to:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Tools |
 |-------|-------|
@@ -39,7 +39,7 @@ As someone diving into both **AI/ML** and **cloud architecture**, I wanted to:
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 - User enters either:
   - a pitcher name + pitch type
@@ -60,7 +60,7 @@ As someone diving into both **AI/ML** and **cloud architecture**, I wanted to:
 ![Compare Players](screenshots/compare_players.png)
 ---
 
-## 📦 Deployment Architecture
+##  Deployment Architecture
 
 React (S3) ←→ FastAPI (EC2) ←→ KNN Model & Statcast Data
         ↑                      ↓
@@ -71,7 +71,7 @@ Backend is managed via `pm2` to ensure reliability across EC2 reboots.
 
 ---
 
-## 🧪 What I Learned
+##  What I Learned
 
 - Building a full stack React/FastAPI ML-powered web app
 - Deploying scalable apps with AWS (EC2, S3, PM2)
@@ -81,7 +81,7 @@ Backend is managed via `pm2` to ensure reliability across EC2 reboots.
 
 ---
 
-## ✍️ Future Improvements
+##  Future Improvements
 
 - Add pitch overlays or charted movement animations
 - Add user login to save favorite comparisons
@@ -90,21 +90,50 @@ Backend is managed via `pm2` to ensure reliability across EC2 reboots.
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
-pitchdna-frontend/
-  ├── src/
-  ├── public/
-  └── .env
-pitchdna-backend/
-  ├── main.py
-  ├── model/
-  └── data/
+PitchDNA/
+├── backend/
+│   ├── main.py
+│   ├── Get_working_URLs.py
+│   ├── URLs_check.py
+│   ├── append_id_list.py
+│   ├── chatgpt_checking_correct_pitcher.py
+│   ├── checking_correct_pitcher.py
+│   ├── checking_correct_playerid.py
+│   ├── fetch_pitcher_ids.py
+│   ├── find_exact_pitch_data.py
+│   ├── find_missing_pitchers.py
+│   ├── fuzzy_fill_pitcher_ids.py
+│   ├── fuzzy_match_leftover_names.py
+│   ├── merge_player_ids.py
+│   ├── obtain_Savant_URLS.py
+│   ├── subset_test.py
+│   ├── *.csv                # All your dataset files (UMAP, validated IDs, stats, etc.)
+│   └── requirements.txt
+│
+├── frontend/
+│   └── pitchdna-frontend/
+│       ├── public/
+│       ├── src/
+│       │   ├── App.js
+│       │   ├── UmapChart.js
+│       │   └── ...
+│       ├── package.json
+│       ├── .env
+│       ├── tailwind.config.js
+│       └── ...
+│
+├── screenshots/
+│   ├── compare_features.png
+│   └── compare_players.png
+│
+├── README.md
+└── .gitignore
 
 ---
 
-## 🔗 Try It Live
+##  Try It Live
 
-[🌐 Open PitchDNA](http://pitchdna-frontend.s3-website-us-west-1.amazonaws.com/)
+[Open PitchDNA](http://pitchdna-frontend.s3-website-us-west-1.amazonaws.com/)
 
-Or clone and run locally (instructions coming soon).
