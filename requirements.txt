@@ -1,0 +1,12 @@
+fastapi==0.115.13
+numpy==2.0.2
+pandas==2.3.0
+pybaseball==2.2.7
+pydantic==2.11.7
+rapidfuzz==3.13.0
+Requests==2.32.4
+scikit_learn==1.6.1
+tqdm==4.67.1
+umap==0.1.1
+Unidecode==1.4.0
+uvicorn==0.34.3
