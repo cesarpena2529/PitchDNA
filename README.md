@@ -39,22 +39,6 @@ As someone diving into both **AI/ML** and **cloud architecture**, I wanted to:
 
 ---
 
-## 📸 Screenshots
-
-### Compare by Player
-![Compare by Player](screenshots/compare-by-player.png)
-
-### 🔍 Compare by Player
-![Compare by Player](screenshots/compare-by-player.png)
-
-### 📈 UMAP Chart
-![UMAP Chart](screenshots/umap-visual.png)
-
-### 🎥 Statcast Video
-![Video Integration](screenshots/statcast-link.png)
-
----
-
 ## 🧠 How It Works
 
 - User enters either:
