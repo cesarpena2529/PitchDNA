@@ -2,7 +2,7 @@
 
 A full-stack baseball pitch comparison engine that uses machine learning and visual analytics to help players, coaches, and scouts find the most similar MLB pitches — based on mechanics, spin, movement, and velocity.
 
-[🔗 Live Demo](http://your-s3-url) • [📸 Screenshots](#screenshots)
+[🔗 Live Demo](http://pitchdna-frontend.s3-website-us-west-1.amazonaws.com/)
 
 ---
 
@@ -111,6 +111,6 @@ pitchdna-backend/
 
 ## 🔗 Try It Live
 
-[🌐 Open PitchDNA](http://your-s3-url)
+[🌐 Open PitchDNA](http://pitchdna-frontend.s3-website-us-west-1.amazonaws.com/)
 
 Or clone and run locally (instructions coming soon).
