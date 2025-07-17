@@ -7,19 +7,19 @@ PitchDNA is a full-stack machine learning web application that helps players, co
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🔍 **Compare by Player Name** – Search for similar pitches by entering pitcher, pitch type, and year
-- 🧠 **Compare by Pitch Characteristics** – Input raw pitch metrics to find your closest MLB comps
-- 📊 **UMAP Visualization** – 2D map of pitch similarity across the league with dynamic user pitch marker
-- 🎥 **Statcast Video Integration** – Click to watch matched pitches via Baseball Savant
-- 🧬 **K-Nearest Neighbors (KNN)** – Backend ML model for pitch similarity
-- 🤖 **Fuzzy Matching** – Handles imprecise player name inputs
-- 💻 **Deployed Full Stack** – React frontend on S3, FastAPI backend on EC2, connected via Axios
+-  **Compare by Player Name** – Search for similar pitches by entering pitcher, pitch type, and year
+-  **Compare by Pitch Characteristics** – Input raw pitch metrics to find your closest MLB comps
+-  **UMAP Visualization** – 2D map of pitch similarity across the league with dynamic user pitch marker
+-  **Statcast Video Integration** – Click to watch matched pitches via Baseball Savant
+-  **K-Nearest Neighbors (KNN)** – Backend ML model for pitch similarity
+-  **Fuzzy Matching** – Handles imprecise player name inputs
+-  **Deployed Full Stack** – React frontend on S3, FastAPI backend on EC2, connected via Axios
 
 ---
 
-## 📦 Deployment Architecture
+##  Deployment Architecture
 
 ```text
         +-------------------------+
@@ -49,7 +49,7 @@ PitchDNA is a full-stack machine learning web application that helps players, co
 
 ---
 
-## 🧱 Why I Didn't Use Docker
+##  Why I Didn't Use Docker
 
 For this version of PitchDNA, I opted for a direct EC2 deployment using a virtual machine and process manager (PM2). This choice allowed me to:
 - Focus on building and deploying the ML-powered application logic
@@ -60,7 +60,7 @@ While containerization with Docker or ECS would improve portability, this projec
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 Users can search by:
 - **MLB Pitcher + pitch type + year**, or
@@ -74,7 +74,7 @@ Backend:
 
 ---
 
-## 📁 Data Overview
+##  Data Overview
 
 Each CSV in `backend/data/` serves a purpose in the transformation pipeline:
 
@@ -101,7 +101,7 @@ Each CSV in `backend/data/` serves a purpose in the transformation pipeline:
 
 ---
 
-## 🧪 Logging
+##  Logging
 
 Logging is implemented via Python's `logging` module. The backend logs key events:
 - Incoming API requests
@@ -113,7 +113,7 @@ This helps track performance and debug production issues.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer        | Tools                            |
 |--------------|----------------------------------|
@@ -125,7 +125,7 @@ This helps track performance and debug production issues.
 
 ---
 
-## 🧾 Running the App Locally
+##  Running the App Locally
 
 ### Prerequisites
 - Node.js, Python 3.9+, Git
@@ -165,7 +165,7 @@ npm run dev
 
 ---
 
-## 🔮 Future Work
+##  Future Work
 
 - Add a Docker-based deployment option
 - Create login accounts to save user comps
@@ -174,7 +174,7 @@ npm run dev
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ![Compare by Player](screenshots/compare_players.png)  
 ![Compare by Features](screenshots/compare_features.png)
