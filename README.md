@@ -1,4 +1,3 @@
-
 # ⚾ PitchDNA
 
 PitchDNA is a full-stack machine learning web application that helps players, coaches, and scouts find the most similar MLB pitches — based on spin, velocity, and movement. It combines a user-friendly UI, a fast backend API, UMAP visualizations, and real MLB video footage via Statcast.
@@ -46,6 +45,18 @@ PitchDNA is a full-stack machine learning web application that helps players, co
 - **Frontend**: Hosted on AWS S3
 - **Backend**: FastAPI app on EC2 managed by PM2 and served using Uvicorn
 - **Data**: Statcast + UMAP + fuzzy-matched video links
+
+---
+
+## 📈 Scalable Prototype and Modeling Approach
+
+This project demonstrates a scalable implementation of a machine learning approach to pitch similarity using a custom distance-based retrieval system. The complete dataset—spanning over a decade of MLB pitch-level data from Baseball Savant (2015–2025)—is fully ingested and processed by the backend service. This shows the system’s capability to handle the full volume of real-world data without subsetting or downsampling.
+
+For dimensionality reduction and visualization, the project uses UMAP (from the `umap-learn` library) and PCA (via `scikit-learn`) to map high-dimensional pitch features into interpretable 2D space, as shown in the [PitchDNA_UMAP.ipynb](./PitchDNA_UMAP.ipynb) and [Pitch_Similarity_UMAP_Demo.ipynb](./Pitch_Similarity_UMAP_Demo.ipynb) notebooks. These Jupyter notebooks clearly document the modeling steps and walk through the full process of loading raw features, transforming them, and calculating similarity via Euclidean distance.
+
+While no deep learning frameworks like TensorFlow or PyTorch were required for this task, the choice of traditional ML techniques was intentional. The problem space—a real-time search and retrieval engine—benefits more from speed and interpretability than complex modeling. Libraries like `scikit-learn`, `pandas`, and `scipy` were selected for their scalability, transparency, and alignment with the project’s real-time inference goals.
+
+The GitHub repository includes clear, modular backend code (`main.py`), a production-ready deployment using EC2 and PM2, and step-by-step notebooks for UMAP visualization and similarity matching. This architecture ensures the application is both practical and extensible—ready for further optimization or integration with more advanced ML components if needed.
 
 ---
 
